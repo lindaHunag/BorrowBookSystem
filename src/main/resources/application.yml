@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  dataSource:
+    #  mysql
+    url: jdbc:mysql://localhost:3306/eSunBank
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: golden112
+  jpa:
+    show-sql: true
+    hibernate: ddl-auto
+
+  application:
+    name: app2ctrl
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 15MB
+      max-request-size: 15MB
+  properties:
+    hibernate:
+      format_sql: true
+
+jasypt:
+ encryptor:
+  password: 'golden112'
